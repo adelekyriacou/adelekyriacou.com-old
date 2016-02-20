@@ -1,0 +1,30 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 
+                "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h1 {
+  font-size: 200%;
+  padding: 50px 0px 50px 0px;
+}
+
+p, h1 {
+  text-align: center;
+}
+
+p {
+  padding-top: 20px;
+  letter-spacing: .5px;
+}
+
+.socialbuttons {
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  h1 {
+    font-size: 400%;
+    padding: 150px 0px 50px 0px;
+  }
+}
+
