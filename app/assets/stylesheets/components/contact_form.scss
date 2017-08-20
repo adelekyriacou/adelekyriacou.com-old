@@ -1,0 +1,13 @@
+.contact_form {
+  margin: 0 auto;
+  padding-top: 2em;
+  width: 30em;
+
+  input, textarea {
+    width: 100%;
+  }
+
+  &__field, &__buttons {
+    padding: 1em 0 0 0;
+  }
+}

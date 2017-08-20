@@ -1,9 +1,24 @@
-<%= form_for @message, url: create_message_url do |f| %>
-  <%= notice %>
-  <%= @message.errors.full_messages.join(', ') %>
+<h1>Talk to me</h1>
 
-  <%= f.text_field :name, placeholder: 'Name' %>
-  <%= f.email_field :email, placeholder: 'Email' %>
-  <%= f.text_area :body, placeholder: 'Message' %>
-  <%= f.submit 'Send' %>
-<% end %>
+<div class="contact_form">
+  <%= form_for @message, url: create_message_url do |f| %>
+    <%= notice %>
+    <%= @message.errors.full_messages.join(', ') %>
+
+    <div class="contact_form__field">
+      <%= f.text_field :name, placeholder: 'Name' %>
+    </div>
+
+    <div class="contact_form__field">
+      <%= f.email_field :email, placeholder: 'Email' %>
+    </div>
+
+    <div class="contact_form__field">
+      <%= f.text_area :body, placeholder: 'Message' %>
+    </div>
+
+    <div class="contact_form__buttons">
+      <%= f.submit 'Send' %>
+    </div>
+  <% end %>
+</div>

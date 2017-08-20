@@ -1,0 +1,6 @@
+input, textarea {
+  display: block;
+  line-height: 1.5;
+  border: 2px solid #ccc;
+  padding: 0 .3em;
+}
